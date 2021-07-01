@@ -2,6 +2,7 @@ const homeController = require('../app/http/controllers/homeController')
 const aboutController = require('../app/http/controllers/aboutController')
 const offersController = require('../app/http/controllers/offfersController')
 const blogController = require('../app/http/controllers/blogController')
+const singlePostController = require('../app/http/controllers/singlePostController')
 
 function initialRoutes(app){
 
@@ -16,6 +17,8 @@ function initialRoutes(app){
 
     // BlogPage
     app.get('/blog', blogController().blog)
+
+    app.get('/singlepost', singlePostController().singlepost)
 }
 
 

@@ -1607,9 +1607,11 @@ header#sidebar-header ul.nav-menu .mega-links-4columns ul.sub-menu-columns > li 
 }
 
 .nile-about-section {
-  padding: 100px 0px 100px 0px;
-  background-image: url(../img/ba_1.jpg);
+  padding: 25px 0px 25px 0px;
+  background-image: url(../img/Client\ BKG.jpg);
   background-size: cover;
+  color: white;
+  background-position: center center;
 }
 
 a.nile-bottom {
@@ -1715,7 +1717,7 @@ a.action-bottom:hover {
 }
 
 .call-action {
-  /* padding: 100px 0px; */
+  padding: 20px 0px;
   color: #fff;
   font-size: 13px;
 }
@@ -17321,7 +17323,7 @@ video {
 }
 
 .margin-bottom-40px {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .margin-bottom-41px {
