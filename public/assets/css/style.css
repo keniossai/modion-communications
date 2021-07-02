@@ -35,6 +35,16 @@ Primary use:    Transportation and Logistics
 
 -------------------------------------------------------------------*/
 
+
+/* Mission text Hovering */
+
+
+
+
+
+
+
+
 .timeline-sec {
 	padding: 100px 0;
 }
@@ -203,27 +213,7 @@ Primary use:    Transportation and Logistics
 	}
 }
 
-/*  */
 
-/* .navigation-box {
-  top: .4rem;
-  right: .8rem;
-  width: 2rem;
-  position: absolute;
-}
-@media (min-width: 768px){
-  .breaking-caret:after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-top: 20px solid transparent;
-      border-left: 15px solid #007bff;
-      border-bottom: 20px solid transparent;
-      position: absolute;
-      right: -15px;
-      top: 0;
-  }
-} */
 
 .slick-slide {
 	margin: 0px 20px;
@@ -1747,7 +1737,7 @@ header#sidebar-header
 }
 
 .nile-about-section {
-	padding: 100px 0px 100px 0px;
+	padding: 70px 0px 70px 0px;
 	background-image: url(../img/ba_1.jpg);
 }
 
