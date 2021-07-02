@@ -1868,12 +1868,7 @@ a.action-bottom:hover {
 }
 
 .section.section-ba-2 {
-	background-image: url('../rslider/assets/Gokada-WEB\ 2.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-	height: 600px;
+	background: #f2f2f2;
 }
 
 .go-title {

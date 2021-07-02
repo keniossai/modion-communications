@@ -3,6 +3,8 @@ const aboutController = require('../app/http/controllers/aboutController')
 const offersController = require('../app/http/controllers/offfersController')
 const blogController = require('../app/http/controllers/blogController')
 const singlePostController = require('../app/http/controllers/singlePostController')
+const contactController = require('../app/http/controllers/contactController')
+const allguidesController = require('../app/http/controllers/allguidesController')
 
 function initialRoutes(app){
 
@@ -19,6 +21,10 @@ function initialRoutes(app){
     app.get('/blog', blogController().blog)
 
     app.get('/singlepost', singlePostController().singlepost)
+
+    app.get('/contact', contactController().contact)
+
+    app.get('/allguides', allguidesController().allguides)
 }
 
 

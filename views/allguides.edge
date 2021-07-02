@@ -1,0 +1,113 @@
+@layout('layouts.app')
+
+
+@section('content')
+  
+
+<div class="page-title">
+    <div class="container">
+        <div class="padding-tb-170px">
+            <h1>Our Guiding Principles</h1>
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal contact-modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content margin-top-150px background-main-color">
+            <div class="row no-gutters">
+                <div class="col-lg-5">
+                    <img src="assets/img/brief.png" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="padding-30px">
+                        <h3 class="padding-bottom-15px">Send Us a Brief</h3>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control" id="inputName4" placeholder="Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <a href="#" class="btn-sm btn-lg btn-block background-dark text-white text-center  text-uppercase rounded-0 padding-15px">SEND MESSAGE</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section padding-tb-100px section-ba-2">
+    <div class="container">
+        <!-- Title -->
+        <div class="section-title margin-bottom-40px">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="icon text-main-color">Core</div>
+                    <div class="h2">Principles</div>
+                </div>
+            </div>
+        </div>
+        <!-- // End Title -->
+
+        <div class="row mt-5">
+
+            <div class="col-lg-6 col-md-6">
+                <div class="testimonials layout-1">
+                    <div><img src="assets/icons/mission.png" alt=""></div>
+                    <h2>MISSION</h2>
+                    <div class="text">To be at the forefront of consistently providing the most creative, dynamic and engaging communications solutions to our clientele and to be the partner of choice renowned for enhancing the competitive capacities of our clients at all times; whilst delivering Africa’s most respected and profitable communications and media entity</div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="testimonials layout-1">
+                    <div><img src="assets/icons/vision.png" alt=""></div>
+                    <h2>VISION</h2>
+                    <div class="text">To be Africa’s most respected communications and media group, delivering cutting edge services to industries, individuals, organizations and governments.</div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="testimonials layout-1">
+                    <div><img src="assets/icons/coreval.png" alt=""></div>
+                    <h2>Core Value</h2>
+                    <div class="text">Leadership<br> Integrity<br> Professionalism <br>Passion</div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 ">
+                <div class="testimonials layout-1">
+                    <div><img src="assets/icons/gprinciples.png" alt=""></div>
+                    <h2>Guiding Principles</h2>
+                    <div class="text">Taking into cognisance the power of communication in influencing behaviours, we are committed to providing solutions that only promote superior product quality, honest and well researched messaging and responsible, sustainable and credible stakeholder engagements.</div>
+                </div>
+            </div>
+
+
+            
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+@endsection
