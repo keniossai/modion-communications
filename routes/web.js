@@ -5,6 +5,8 @@ const blogController = require('../app/http/controllers/blogController')
 const singlePostController = require('../app/http/controllers/singlePostController')
 const contactController = require('../app/http/controllers/contactController')
 const allguidesController = require('../app/http/controllers/allguidesController')
+const createPostController = require('../app/http/controllers/createPostController')
+const postController = require('../app/http/controllers/postController')
 
 function initialRoutes(app){
 
@@ -20,11 +22,20 @@ function initialRoutes(app){
     // BlogPage
     app.get('/blog', blogController().blog)
 
+    // Single post
     app.get('/singlepost', singlePostController().singlepost)
 
+    // Contact
     app.get('/contact', contactController().contact)
 
+    // Mision Vision
     app.get('/allguides', allguidesController().allguides)
+
+    // Create Post
+    app.get('/create', createPostController().create)
+
+    // Post Route
+    app.post('/posts/store', postController().post)
 }
 
 
