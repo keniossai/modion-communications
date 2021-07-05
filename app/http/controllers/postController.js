@@ -1,9 +1,13 @@
+const Post = require('./database/models/Post')
+
 function postController(){
     
     return{
-        post(req, res){
-            console.log(req.body)
-            res.redirect('/')
+        posts(req, res){
+            
+            Post.create(req.body, (error, post) => {
+                res.redirect('/')
+            })
         }
     }
 }

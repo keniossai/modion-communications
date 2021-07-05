@@ -35,12 +35,110 @@ Primary use:    Transportation and Logistics
 
 -------------------------------------------------------------------*/
 
+/* 
+@media only screen and (max-width: 600) {
+	.slide-title{
+		font-size: 6px;
+	}
+}
+@media only screen and (max-width: 400) {
+	.slide-title{
+		font-size: 7px !important;
+		letter-spacing: 1.8px;
+	}
+}
+@media only screen and (max-width: 900) {
+	.slide-title{
+		font-size: 60px !important;
+		letter-spacing: 1.8px;
+	}
+} */
+
 
 
 /* Mission text Hovering */
 
+.f-control{
+	display: block;
+		width: 100%;
+		padding: 0.375rem 0.75rem;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #212529;
+		background-color: rgb(248, 248, 248);
+		background-clip: padding-box;
+		border: 1px solid #ced4da;
+		-webkit-appearance: none;
+		   -moz-appearance: none;
+				appearance: none;
+		border-radius: 0;
+		transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: 4.5rem;
+  line-height: 1.25;
+}
+
+.createPost{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	pointer-events: none;
+	opacity: 0.90;
+	letter-spacing: 0.0625;
+}
+
+.form-floating input,
+.form-floating textarea {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  outline: none;
+}
+
+.form-floating > label {
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	height: 90%;
+	padding: 1.25rem 0;
+	pointer-events: none;
+	border: 1px solid transparent;
+	transform-origin: 0 0;
+	transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  }
+
+  .f-control{
+	  resize: vertical;
+  }
+
+  .form-floating > .form-control {
+	padding: 1.25rem 0;
+  }
+
+  .form-floating{
+	  position: relative;
+  }
+
+  input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
 
 
+.background-dark{
+	outline: none;
+	cursor: pointer;
+}
 
 
 .timeline-sec {
@@ -1521,7 +1619,7 @@ header#sidebar-header
 }
 
 .cart-service {
-	padding: 30px;
+	padding: 7px;
 	color: #fff;
 	text-align: center;
 	-webkit-box-shadow: 0px 0px 36px -13px rgba(0, 0, 0, 0.75);
@@ -1530,16 +1628,22 @@ header#sidebar-header
 	margin-bottom: 30px;
 }
 .cart-service h2 {
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 500;
+}
+
+.cart-service h5{
+	font-size: 10px;
+	font-weight: 100;
+	font-style: italic;
 }
 .cart-service hr {
 	border-color: rgba(255, 255, 255, 0.4);
 }
 .cart-service .text {
-	padding-bottom: 8px;
-	font-size: 13px;
+	font-size: 12px;
 	opacity: 0.8;
+	
 }
 
 .cart-counters {
@@ -2695,6 +2799,10 @@ video {
 /*--- Global Background ---*/
 .background-main-color {
 	background-color: #e53935;
+}
+
+.gray{
+	background-color: black !important;
 }
 
 .background-main-color-2 {

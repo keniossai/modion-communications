@@ -5,16 +5,24 @@ const PostSchema = new mongoose.Schema({
 
     title: String,
 
-    description: String,
+    subtitle: String,
 
-    conten: String
+    content: String,
+
+    username: String,
+
+    image: String,
+
+    createdAt: {
+
+        type: Date,
+
+        default: new Date()
+    }
 })
 
-const Post = mongoose.model(Post, PostSchema)
 
+const Post = mongoose.model('Post', PostSchema)
 
 
 module.exports = Post
-
-
-// mongodb+srv://keniossai:<password>@kencluster.mpx9j.mongodb.net/test

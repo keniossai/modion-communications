@@ -65,20 +65,17 @@
                     <div class="thum-img">
                         <a href="#"><img src="assets/img/blog-1.jpg" alt=""></a>
                     </div>
-                    <a href="#" class="title">Everything Is Okay In The End. If it's Not Okay, Then It's Not The End</a>
+                    <h1 class="title">{{post.title}}</h1>
                     <div class="meta-out margin-bottom-20px">
                         <ul class="meta">
-                            <li> <span class="icon icon_clock_alt"></span> May 22, 2018 </li>
-                            <li> <span class="icon icon_profile"></span><a href="#">Rabie Eltgani</a> </li>
+                            <li> <span class="icon icon_clock_alt"></span> {{post.createdAt.toDateString()}} </li>
+                            <li> <span class="icon icon_profile"></span><a href="#">{{post.username}}</a> </li>
                             <li> <span class="icon icon_comment_alt"></span><a href="#">2</a> </li>
                         </ul>
                     </div>
                     <div class="entry-content">
-                        <p>Water Curing Is One Of The Most Traditional Ways To Seal Moisture From The Newly Laid Walls. This Is A Time Consuming Process And Hence Delays The Construction Work. The Curing Compounds From The Top Construction Chemicals Manufacturers In India Help Lock The Moisture On The Freshly Laid Concrete Instantly. This Kind Of Compound Is ...</p>
-                        <h5>Where can I get some?</h5>
-                        <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet, varius augue. Praesent aliquam, augue ac pulvinar accumsan</p>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-
+                        <h5>{{post.subtitle}}</h5>
+                        <p>{{post.content}}</p>
                     </div>
                     <!-- Post tags -->
                     <hr>

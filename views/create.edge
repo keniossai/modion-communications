@@ -14,32 +14,43 @@
     </div>
 </div>
 
-
-<div class="container justify-content-center">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="padding-70px">
-                <h2 class="padding-bottom-15px">Create Post</h2>
-                <form action="/posts/store" method="POST">
-                    <div class="form-group">
-                        <label>Title</label>
-                        <input type="text" class="form-control" id="inputAddress" name='title' placeholder="Title">
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+                <h1>Create a Post</h1>
+            <form action="/posts/store" method="POST" enctype="multipart/form-data">
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls form-floating">
+                      <label>Username</label>
+                      <input type="text" placeholder="Username" name="username" class="form-control f-control">
                     </div>
-                    <div class="form-group">
-                        <label>Discription</label>
-                        <input type="text" class="form-control" id="inputAddress" name="description" placeholder="Description">
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls form-floating">
+                      <label>Title</label>
+                      <input type="text" placeholder="Title" name="title" class="form-control f-control">
                     </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea class="form-control" name="content" cols="30" rows="10" id="" rows="3"></textarea>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls form-floating">
+                      <label>Subtitle</label>
+                      <input type="text" placeholder="Subtitle" name="subtitle" class="form-control f-control">
                     </div>
-                    <div class="form-group my-4">
-                        <a href="" class="btn-sm btn-lg btn-block background-dark text-white text-center  text-uppercase rounded-0 padding-15px">CREATE POST</a>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls form-floating">
+                      <label>Content</label>
+                      <textarea class="f-control" name="content" placeholder="Content..." id="" cols="65" rows="10"></textarea>
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="form-group mt-5">
+                    <input type="file" name="image" class="form-control-file">
+                </div>
+                <div class="form-group text-center my-4">
+                    <button class="btn btn-primary btn-block">Create Post</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
-    
 @endsection
