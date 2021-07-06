@@ -251,9 +251,9 @@ textarea {
 	margin-left: 20px;
 }
 .timeline-item .timeline-img-header {
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
-		url('https://picsum.photos/1000/800/?random') center center no-repeat;
+	/* background-image: url('{{post.image}}'); */
 	background-size: cover;
+	background-position: center center;
 }
 .timeline-img-header {
 	height: 200px;
@@ -1289,6 +1289,7 @@ header.header-search .input-group-lg > .input-group-btn > .btn {
 	top: 0;
 	left: 0;
 	width: 100%;
+	/* margin-top: 15px; */
 }
 
 .fixed-header-dark {
@@ -1841,6 +1842,12 @@ header#sidebar-header
 .nile-about-section {
 	padding: 70px 0px 70px 0px;
 	background-image: url(../img/ba_1.jpg);
+}
+
+.dark-gray{
+	padding: 70px 0px 70px 0px;
+	background-color: #000 !important;
+	color: white;
 }
 
 a.nile-bottom {
@@ -2486,7 +2493,7 @@ footer.layout-dark .contact-info {
 }
 footer.layout-dark .contact-info .icon {
 	float: left;
-	font-size: 30px;
+	font-size: 40px;
 	margin-right: 15px;
 }
 footer.layout-dark .contact-info span.title-in {

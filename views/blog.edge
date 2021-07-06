@@ -8,11 +8,7 @@
     <div class="container">
         <div class="padding-tb-180px">
             <h1>Latest News</h1>
-            <ol class="breadcrumb">
-                <li><a href="/">Home</a></li>
-                <li class="active">Articles</li>
-            </ol>
-        </div>
+          </div>
     </div>
 </div>
 
@@ -74,7 +70,8 @@
                     <div class="timeline-img"></div>
               
                     <div class="timeline-content timeline-card js--fadeInRight">
-                      <div class="timeline-img-header">
+                      <div class="timeline-img-header" style="background-image: url('{{post.image}}'); background-size: cover;
+                      background-position: center center;">
                         <h2>{{post.title}}</h2>
                       </div>
                       <div class="date">{{post.createdAt.toDateString()}}</div>
@@ -91,8 +88,8 @@
                 </div>
               </section>
 
-              <a href="/create" class="nile-bottom add-post sm">ADD MORE POST</a>
-        </div>
+            </div>
+            <a href="/create" class="nile-bottom add-post sm">ADD MORE POST</a>
 
     </div>
 </div>

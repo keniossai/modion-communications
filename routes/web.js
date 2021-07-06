@@ -1,44 +1,47 @@
 // const homeController = require('../app/http/controllers/homeController')
-const aboutController = require('../app/http/controllers/aboutController')
-const offersController = require('../app/http/controllers/offfersController')
+// const aboutController = require('../app/http/controllers/aboutController')
+// const offersController = require('../app/http/controllers/offfersController')
 // const blogController = require('../app/http/controllers/blogController')
 // const singlePostController = require('../app/http/controllers/singlePostController')
-const contactController = require('../app/http/controllers/contactController')
-const allguidesController = require('../app/http/controllers/allguidesController')
-const createPostController = require('../app/http/controllers/createPostController')
-// const postController = require('../app/http/controllers/postController')
+// const contactController = require('../app/http/controllers/contactController')
+// const allguidesController = require('../app/http/controllers/allguidesController')
+// const createPostController = require('../app/http/controllers/createPostController')
+// const resourceController = require('../app/http/controllers/resourceController')
+// const storePostController = require('../app/http/controllers/storePostController')
 
 
 
-function initialRoutes(app){
+// function initialRoutes(app){
 
-    // Homapage
-    // app.get('/', homeController().home)
+//     // Homapage
+//     app.get('/', homeController)
     
-    // Aboutpage
-    app.get('/about', aboutController().about)
+//     // Aboutpage
+//     app.get('/about', aboutController)
 
-    // OffersPage
-    app.get('/offers', offersController().offers)
+//     // OffersPage
+//     app.get('/offers', offersController)
 
-    // BlogPage
-    // app.get('/blog', blogController().blog)
+//     // BlogPage
+//     app.get('/blog', blogController)
 
-    // Single post
-    // app.get('/singlepost', singlePostController().singlepost)
+//     // Single post
+//     app.get('/singlepost/:id', singlePostController)
 
-    // Contact
-    app.get('/contact', contactController().contact)
+//     // Contact
+//     app.get('/contact', contactController)
 
-    // Mision Vision
-    app.get('/allguides', allguidesController().allguides)
+//     // Mision Vision
+//     app.get('/allguides', allguidesController)
 
-    // Create Post
-    app.get('/create', createPostController().create)
+//     // Create Post
+//     app.get('/create', createPostController)
 
-    // Post Route
-    // app.post('/posts/store', postController().posts)
-}
+//     app.get('/resource', resourceController)
+
+//     // Post Route
+//     app.post('/posts/store', storePostController)
+// }
 
 
-module.exports = initialRoutes
+// module.exports = initialRoutes
