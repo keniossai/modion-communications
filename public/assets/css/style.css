@@ -1762,7 +1762,7 @@ header#sidebar-header
 	font-size: 16px;
 }
 .blog-item .date span.month {
-	color: #5a5a5a;
+	color: rgb(248, 70, 70);
 	font-size: 12px;
 }
 .blog-item a.title {

@@ -6,9 +6,8 @@ module.exports = (req, res, next) => {
 		!req.body.subtitle ||
 		!req.body.content
 	) {
-    }
-    return res.redirect('/create')
+		return res.redirect('/create')
+	}
 
 	next()
 }
-
