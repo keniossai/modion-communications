@@ -1,47 +1,14 @@
-// const homeController = require('../app/http/controllers/homeController')
-// const aboutController = require('../app/http/controllers/aboutController')
-// const offersController = require('../app/http/controllers/offfersController')
-// const blogController = require('../app/http/controllers/blogController')
-// const singlePostController = require('../app/http/controllers/singlePostController')
-// const contactController = require('../app/http/controllers/contactController')
-// const allguidesController = require('../app/http/controllers/allguidesController')
-// const createPostController = require('../app/http/controllers/createPostController')
-// const resourceController = require('../app/http/controllers/resourceController')
-// const storePostController = require('../app/http/controllers/storePostController')
+// Copyright 2021 mac
+// 
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+// 
+//     http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
-
-
-// function initialRoutes(app){
-
-//     // Homapage
-//     app.get('/', homeController)
-    
-//     // Aboutpage
-//     app.get('/about', aboutController)
-
-//     // OffersPage
-//     app.get('/offers', offersController)
-
-//     // BlogPage
-//     app.get('/blog', blogController)
-
-//     // Single post
-//     app.get('/singlepost/:id', singlePostController)
-
-//     // Contact
-//     app.get('/contact', contactController)
-
-//     // Mision Vision
-//     app.get('/allguides', allguidesController)
-
-//     // Create Post
-//     app.get('/create', createPostController)
-
-//     app.get('/resource', resourceController)
-
-//     // Post Route
-//     app.post('/posts/store', storePostController)
-// }
-
-
-// module.exports = initialRoutes

@@ -1,3 +1,4 @@
+// PATH MODULE
 const path = require('path')
 
 // DOTENV
@@ -18,6 +19,8 @@ const mongoose = require('mongoose')
 // Post Model
 const Post = require('./database/models/Post')
 
+// EXPRES FILEUPLOAD
+const fileUpload = require('express-fileupload')
 
 // EXPRESS SERVER
 const app = express()
@@ -41,42 +44,65 @@ connection.once('open', () => {
 
 dotenv.config({path: './config/config.env'})
 
-config({ cache: process.env.NODE_ENV === 'production' })
-app.use(engine)
 
-
-app.use(bodyParser.urlencoded({extended: true}))
-app.use(bodyParser.json())
-
-
+app.use(fileUpload())
 app.use(express.static('public'))
 app.set('views', `${__dirname}/views`)
 
 
-// const initialRoutes = require('./routes/web')(app)
+config({ cache: process.env.NODE_ENV === 'production' })
+app.use(engine)
+
+
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
+
+
+
+
 
 
 // Initial Routes
 
-app.get('/', (req, res) => {
-    res.render('home')
+app.get('/', async (req, res) => {
+
+    const posts = await Post.find({})
+    console.log(posts)
+    res.render('home', {
+
+        posts
+    })
 })
+
 
 // About Routes
 app.get('/about', (req, res) => {
     res.render('about')
 })
 
+app.get('/create', (req, res) => {
+    res.render('create')
+})
+
+// Post Route
+app.post('/posts/store', (req, res) => {
+    
+    const { image } = req.files
+
+    image.mv(path.resolve(__dirname, 'public/posts', image.name), (error) => {
+
+        Post.create(req.body, (error, post) => {
+    
+            res.redirect('/')
+        })
+    })
+})
 
 // Resource Routes
 app.get('/resource', (req, res) => {
     res.render('resource')
 })
 
-
-app.get('/create', (req, res) => {
-    res.render('create')
-})
 
 app.get('/contact', (req, res) => {
     res.render('contact')
@@ -86,10 +112,20 @@ app.get('/blog', (req, res) => {
     res.render('blog')
 })
 
+app.get('/singlepost/:id', async (req, res) => {
+
+    const post = await Post.findById(req.params.id)
+    res.render('singlepost', {
+
+        post
+    })
+})
+
 
 app.get('/allguides', (req, res) => {
     res.render('allguides')
 })
+
 app.get('/offers', (req, res) => {
     res.render('offers')
 })
